@@ -96,7 +96,7 @@ async def crypto_parse(bot: Bot):
                 if not db_symbols:
                     topics = ["publicTrade.BTCUSDT"]
                 else:
-                    topics = [f"publicTrade.{s}USDT" if not s.endswith("USDT") else f"publicTrade.{s}" for s in db_symbols]
+                    topics = [f"publicTrade.{s} USDT" if not s.endswith("USDT") else f"publicTrade.{s}" for s in db_symbols]
 
                 logger.info(f"Подключение к Bybit WebSocket. Отслеживаемые тикеры: {topics}")
                 async with session.ws_connect(BYBIT_WS_URL) as ws:
