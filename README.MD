@@ -68,8 +68,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-<h4>4. Env setup</h4>```pip install -r requirements.txt
-```
+<h4>4. Env setup</h4>
+
 Create .env file and get telegram token from @BotFather
 And fill this constants inside .env file!
 
@@ -78,7 +78,7 @@ And fill this constants inside .env file!
     DATABASE_URL = ""
 ```
 
-<h4>Docker</h4>
+<h4>5. Docker</h4>
 
 ```
 #if Windows
