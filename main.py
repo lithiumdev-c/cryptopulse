@@ -11,7 +11,7 @@ import app.database.requests as rq
 
 load_dotenv()
 
-TOKEN = os.getenv('BOT_TOKEN') or '8769951552:AAHE_LHhnhV2SifAGULvWVM7nxxoiQHXM7o'
+TOKEN = os.getenv('BOT_TOKEN')
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
