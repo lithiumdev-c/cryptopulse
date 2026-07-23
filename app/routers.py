@@ -389,7 +389,7 @@ async def cmd_price(msg: Message, command: CommandObject):
 @router.message(Command('upgrade'))
 async def cmd_update(msg: Message):
     description = (
-    '*⚡️ CRYPTOPULSE PREMIUM TIER*\n\n'
+    '⚡️ *CRYPTOPULSE PREMIUM TIER*\n\n'
 
     'Unlock high-frequency institutional tracking and front-run market movements!\n\n'
 
