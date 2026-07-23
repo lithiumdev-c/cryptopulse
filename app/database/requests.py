@@ -105,10 +105,12 @@ async def expire_subscription() -> int:
                 tier='free',
                 premium_expires_at=None
             )
+            .returning(User.user_id)
         )
         result = await session.execute(stmt)
+        expired_users = result.scalars().all()
         await session.commit()
-        return len(result.scalars().all())
+        return len(expired_users)
 
 async def get_all_monitored_symbols() -> list[str]:
     async with async_session() as session:

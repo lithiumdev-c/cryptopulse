@@ -11,7 +11,7 @@ import app.database.requests as rq
 
 load_dotenv()
 
-TOKEN = os.environ['TOKEN']
+TOKEN = os.getenv('BOT_TOKEN') or '8769951552:AAHE_LHhnhV2SifAGULvWVM7nxxoiQHXM7o'
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -39,6 +39,10 @@ async def main():
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     try:
+        print('>>> Starting bot...')
         asyncio.run(main())
     except KeyboardInterrupt:
         print("Bot stopped!")
+    except Exception as e:
+        logging.critical(f"CRITICAL ERROR ON STARTUP: {e}", exc_info=True)
+        raise e
