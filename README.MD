@@ -78,6 +78,18 @@ And fill this constants inside .env file!
     DATABASE_URL = ""
 ```
 
+<h4>Docker</h4>
+
+```
+#if Windows
+
+docker compose up -d
+
+#if Linux
+
+sudo docker compose up -d
+```
+
 ##
 
 ## Launch
