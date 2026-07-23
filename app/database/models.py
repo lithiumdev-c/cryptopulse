@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DATABASE_URL = "postgresql+asyncpg://postgres.vamflianmxtrnumsczvc:cryptopass7348@aws-0-ap-southeast-2.pooler.supabase.com:5432/postgres"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 engine = create_async_engine(
     url=DATABASE_URL,
