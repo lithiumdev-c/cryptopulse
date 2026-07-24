@@ -10,6 +10,7 @@
     <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white">
 </p>
 
+***Now you can use this bot: @CryptoPulseBbot***
 
 ## ⚡ CryptoPulse - SaaS Telegram Bot for Crypto Tracking
 
